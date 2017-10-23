@@ -140,7 +140,21 @@ img#logos{
 }
 img#phone{
     width: 12.5rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
+}
+img#large-phone {
+    width: 17rem;
+    margin-top: 2.5rem;
+    margin-left: -4rem;
+}
+.two-images {
+    display: flex;
+}
+img#testing-phone1 {
+    margin-top: -2.5rem;
+}
+img#testing-phone2 {
+    margin-top: 2rem;
 }
 
 
@@ -201,7 +215,55 @@ a.button:hover{
 }
 
 
+.inline-link {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .035rem;
+    cursor: pointer;
+}
+.inline-link:after {
+    position: absolute;
+    padding-left: 10px;
+    content: "";
+    background: url("images/inline-arrow.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+}
+.inline-link-active{
+    display: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .035rem;
+    cursor: pointer;
+}
+.inline-link-active:after{
+    margin: 9px 0;
+    transform: rotate(90deg);
+    padding: 0;
+    position: absolute;
+    content: "";
+    background: url("images/inline-arrow.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.inline-link::before{
+    height: 2px;
+    width: 16.5%;
+    color: #fff;
+    background-color: #001242;
+    content: "";
+    position: absolute;
+    margin-top: 24px;
+}
 
+.collapsed-text {
+    background-color: rgba(0,18,66,.03);
+    padding: 15px 60px 25px 30px;
+    border-top: 2px solid #001242;
+    margin-top: -2px;
+    display: none;
+}
 
 .main-nav {
     font-family: ProximaNova-Extrabld;
@@ -569,8 +631,11 @@ section.case-study{
 
 
 
-.active{
+.active-blue{
     color: #001242 !important;
+}
+.active-red{
+    color: #E54B4B !important;
 }
 
 strong#p-title{
@@ -579,4 +644,23 @@ strong#p-title{
 }
 .body-copy p{
     margin-top: 0;
+}
+
+.ft-image {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.caption {
+    font-size: .875rem;
+    line-height: 1.45;
+    text-align: center;
+    margin-top: 1rem;
+    width: 90%;
+    font-style: italic;
+}
+img#margin-top{
+    margin-top: 1rem;
 }

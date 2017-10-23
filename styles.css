@@ -129,6 +129,13 @@ a.button{
 }
 
 
+a.inline-link {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #001242;
+    text-decoration: underline;
+    letter-spacing: .035rem;
+}
 
 
 .main-nav {
