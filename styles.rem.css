@@ -99,6 +99,8 @@ h7{
 	letter-spacing: .01rem;
 	line-height: 1.625rem;
     max-width: 35.625rem;
+    display: flex;
+    flex-direction: column;
 }
 .body-copy ul {
     padding-left: 1.85rem;
@@ -149,6 +151,9 @@ img#large-phone {
 }
 .two-images {
     display: flex;
+}
+.two-images .ft-image{
+    width: inherit;
 }
 img#testing-phone1 {
     margin-top: -2.5rem;
@@ -617,10 +622,13 @@ section.case-study{
     width: 100%;
 }
 .case-study-content{
-    min-width: 58.75rem;
+    max-width: 58.75rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 4.5rem;
+}
+.case-study-content#center{
+    min-width: 58.75rem;
 }
 .intro, .writing{
     display: flex;
@@ -647,20 +655,46 @@ strong#p-title{
 }
 
 .ft-image {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2.5rem;
+    justify-content: center;
 }
 .caption {
     font-size: .875rem;
     line-height: 1.45;
     text-align: center;
-    margin-top: 1rem;
-    width: 90%;
+    margin-top: .75rem;
+    width: 80%;
     font-style: italic;
+    font-family: ProximaNova-Regular;
 }
 img#margin-top{
     margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 956px) {
+    .case-header{padding: 0;}
+    #dashboard-header .content {min-width: inherit; width: 100%; padding: 7rem 2rem 3rem 2rem;}
+    h1{font-size: 5.25rem; line-height: 4.0625rem;}
+    h4{font-size: 2.125rem; line-height: 3.625rem;}
+    h6{font-size: 1rem; line-height: 1.3125rem;}
+    .case-nav{font-size: 1.15rem; width: 100%;}
+    ul.case-nav-content{width: 100%; justify-content: flex-start; min-width: inherit;}
+    .case-study-content{width: 100%; padding: 0 2rem 4.5rem 2rem;}    
+    .intro{flex-direction: row; margin-top: 4.625rem; width: 100%;}
+    .side-image{max-width: inherit; position: inherit; margin-left: 0;}
+    section#research{flex-direction: column;}
+    section#design{flex-direction: column;}
+    section#testing{flex-direction: row;}
+    section#revision{flex-direction: column;}
+    .ft-image{width: 100%;}
+    img{width: inherit;}
+    .two-images .ft-image{width: 80%;}
+    .two-images .side-image{width: 60%;}
+    img#large-phone{width: 80%;}
+    .button{margin-bottom: 2rem;}
 }

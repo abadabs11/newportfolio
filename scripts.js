@@ -45,26 +45,26 @@ $("#nav-item-1").click(function () {
     }, 2000);
   });
 
-  $("#nav-item-1").click(function () {
-    $("a").removeClass('active-blue');
-    $("#nav-item-1").addClass('active-blue');
-  });
-  $("#nav-item-2").click(function () {
-    $("a").removeClass('active-blue');
-    $("#nav-item-2").addClass('active-blue');
-  });
-  $("#nav-item-3").click(function () {
-    $("a").removeClass('active-blue');
-    $("#nav-item-3").addClass('active-blue');
-  });
-  $("#nav-item-4").click(function () {
-    $("a").removeClass('active-blue');
-    $("#nav-item-4").addClass('active-blue');
-  });
-  $("#nav-item-5").click(function () {
-    $("a").removeClass('active-blue');
-    $("#nav-item-5").addClass('active-blue');
-  });
+  // $("#nav-item-1").click(function () {
+  //   $("a").removeClass('active-blue');
+  //   $("#nav-item-1").addClass('active-blue');
+  // });
+  // $("#nav-item-2").click(function () {
+  //   $("a").removeClass('active-blue');
+  //   $("#nav-item-2").addClass('active-blue');
+  // });
+  // $("#nav-item-3").click(function () {
+  //   $("a").removeClass('active-blue');
+  //   $("#nav-item-3").addClass('active-blue');
+  // });
+  // $("#nav-item-4").click(function () {
+  //   $("a").removeClass('active-blue');
+  //   $("#nav-item-4").addClass('active-blue');
+  // });
+  // $("#nav-item-5").click(function () {
+  //   $("a").removeClass('active-blue');
+  //   $("#nav-item-5").addClass('active-blue');
+  // });
   $(document).ready(function(){
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
@@ -91,48 +91,55 @@ $("#nav-item-1").click(function () {
     });
   });
 
-  $("#nav-item-1-red").click(function () {
-    $("a").removeClass('active-red');
-    $("#nav-item-1-red").addClass('active-red');
+$("#nav-item-1-red").click(function () {
+    $('html, body').animate({
+      scrollTop: $("#intro").offset().top - 140
+    }, 2000);
   });
   $("#nav-item-2-red").click(function () {
-    $("a").removeClass('active-red');
-    $("#nav-item-2-red").addClass('active-red');
+    $('html, body').animate({
+      scrollTop: $("#design").offset().top - 150
+    }, 2000);
   });
   $("#nav-item-3-red").click(function () {
-    $("a").removeClass('active-red');
-    $("#nav-item-3-red").addClass('active-red');
+    $('html, body').animate({
+      scrollTop: $("#final-design").offset().top - 150
+    }, 2000);
   });
-  $("#nav-item-4-red").click(function () {
-    $("a").removeClass('active-red');
-    $("#nav-item-4-red").addClass('active-red');
-  });
-  $("#nav-item-5-red").click(function () {
-    $("a").removeClass('active-red');
-    $("#nav-item-5-red").addClass('active-red');
-  });
+  // $("#nav-item-1-red").click(function () {
+  //   $("a").removeClass('active-red');
+  //   $("#nav-item-1-red").addClass('active-red');
+  // });
+  // $("#nav-item-2-red").click(function () {
+  //   $("a").removeClass('active-red');
+  //   $("#nav-item-2-red").addClass('active-red');
+  // });
+  // $("#nav-item-3-red").click(function () {
+  //   $("a").removeClass('active-red');
+  //   $("#nav-item-3-red").addClass('active-red');
+  // });
   $(document).ready(function(){
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
-      if(scroll < 440){
+      if(scroll < 1480){
        $("a").removeClass('active-red');
        $("#nav-item-1-red").addClass('active-red');
       }
-      else if(scroll > 440 && scroll < 880){
+      else if(scroll > 1480 && scroll < 5700){
        $("a").removeClass('active-red');
        $("#nav-item-2-red").addClass('active-red');
       }
-      else if(scroll > 880 && scroll < 1320){
+      // else if(scroll > 5700 && scroll < 8760){
+      //  $("a").removeClass('active-red');
+      //  $("#nav-item-3-red").addClass('active-red');
+      // }
+      // else if(scroll > 4620 && scroll < 4760){
+      //  $("a").removeClass('active-red');
+      //  $("#nav-item-4-red").addClass('active-red');
+      // }
+      else if(scroll >= 5700){
        $("a").removeClass('active-red');
        $("#nav-item-3-red").addClass('active-red');
-      }
-      else if(scroll > 1320 && scroll < 1760){
-       $("a").removeClass('active-red');
-       $("#nav-item-4-red").addClass('active-red');
-      }
-      else if(scroll >= 1760){
-       $("a").removeClass('active-red');
-       $("#nav-item-5-red").addClass('active-red');
       }
     });
   });
