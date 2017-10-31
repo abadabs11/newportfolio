@@ -41,45 +41,33 @@
 <div class="case-header" id="adminportal-header">
     <div class="content">
         <h1 class="white">Admin Portal:</h1>
-        <h4 class="white">Feedback Ticket Dashboard</h4>
+        <h4 class="white">Feedback Ticket Dashboards</h4>
         <h6 class="blue">UX  •  UI  •  Research  •  Development</h6>
     </div>
 </div>
 
     <section class="case-nav lt-gray-background blue">
         <ul class="case-nav-content" id="adminportal-nav">
-            <li><a href="#intro" id="nav-item-1-red" class="active-red">Intro</a></li>
+            <li><a href="#intro" id="nav-item-1-red" class="active">Intro</a></li>
             <li><a href="#design" id="nav-item-2-red">Design Process</a></li>
             <li><a href="#final-design" id="nav-item-3-red">Final Design</a></li>
         </ul>
     </section>
 
-<!--     <section class="case-nav lt-gray-background blue">
-        <ul class="case-nav-content" id="adminportal-nav">
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#design">Design</a></li>
-            <li><a href="#testing">Testing</a></li>
-            <li><a href="#revision">Revision</a></li>
-        </ul>
-    </section> -->
+
 
 <section class="case-study">
-    <div class="case-study-content" id="center">
+    <div class="case-study-content">
         <section class="intro" id="intro" data-link-id="nav-item-1-red">
-        <div class="body-copy">
+            <div class="body-copy">
             <h2 class="red shadow">Intro</h2>
-                
-                <div class="side-image" id="admin">
-                    <img src="images/logos.png" id="logos" />
-                    <img src="images/feedback-phone.png" id="phone" />
-                </div>
-
-
                 <strong class="green large" id="p-title">Who is Netpulse?</strong>
                 <p>
                     Netpulse is the #1 mobile SaaS company in the <span class="red">fitness industry</span>, providing <span class="red">white labeled apps</span> to hundreds of brands around the world. From 24 Hour Fitness to your neighborhood's mom-and-pop facility, Netpulse creates effective B2B2C solutions to make the sometimes scary world of fitness a little more approachable for meatheads and newbies alike.
                 </p>
+                <div class="hidden-image">
+                    <img src="images/logos.png" id="logos" />
+                </div>
                 <div class="inline-link blue">My Role at Netpulse</div>
                 <div class="inline-link-active blue">My Role at Netpulse</div>
                 <div class="collapsed-text">
@@ -106,18 +94,18 @@
                         Zeplin organization, Design reviews, Design QA, Design task management
                     </p>
                 </div>
-
                 <strong class="green large" id="p-title">The Feedback Product</strong>
                 <ul>
                     <li><strong>Mobile:</strong> members rate their experience in the club after each workout</li>
                     <li><strong>Web:</strong> tickets appear in real-time on the gym manager’s admin portal</li>
                     <li>4 month pilot with 15 customers</li>
                 </ul>
-
-                <div class="">
+                <div class="inline-image">
                     <img src="images/portal-1.png" />
                 </div>
-
+                <div class="hidden-image">
+                    <img src="images/feedback-phone.png" id="phone" />
+                </div>
                 <strong class="green large" id="p-title">Pilot Takeaways</strong>
                 <ul>
                     <li>Admin can only see a couple tickets at a time</li>
@@ -133,34 +121,36 @@
                     <li><strong>Task 2:</strong> Better reporting and ticket hierarchy</li>
                     <li><strong>Task 3:</strong> Automation so managers don’t have to spend as much time to get the benefit</li>
                 </ul>
-
             </div>
+        <div class="side-image">
+            <img src="images/logos.png" id="logos" />
+            <img src="images/feedback-phone.png" id="phone" />
+        </div>
         </section>
-
         <section class="intro" id="design" data-link-id="nav-item-2-red">
-            <div class="body-copy">
             <h2 class="red shadow">Design Process</h2>
-
-
+            <div class="body-copy">
                 <strong class="green large" id="p-title">Task 1: High Quantity of Tickets</strong>
                 <p>
                     I began by keeping the existing card design but updating them to accommodate the new, more detailed Class feedback. Hierarchy was brought into the ticket sorting, surfacing the negative tickets at the top so the Club Manager can quickly put out any fires.
                 </p>
             </div>
                 <div class="ft-image">
-                    <img src="images/portal-2.png" />
+                    <div class="laptop-image">
+                        <div class="screen"><img src="images/feedback-1-lg.gif" /></div><img class="laptop" src="images/laptop.png" />
+                    </div>
                     <div class="caption">
                         Tickets were moved into two columns for faster scanning. Negative tickets and positive tickets with testimonials were given more weight so user can focus on resolving highest priority tasks. Issues: side by side tickets required too much cognitive load from users.
                     </div>
                 </div>
-
                 <div class="ft-image">
-                    <img src="images/portal-3.png" />
+                    <div class="laptop-image">
+                        <div class="screen"><img src="images/feedback3.gif" /></div><img class="laptop" src="images/laptop.png" />
+                    </div>
                     <div class="caption">
                         Details can be surfaced one ticket at a time, providing more focus when necessary but allowing the user to quickly scroll through the high level.
                     </div>
                 </div>
-
             <div class="body-copy">
                 <strong class="green large" id="p-title">Task 2: Better Reporting & Hierarchy</strong>
                 <p>
@@ -168,19 +158,21 @@
                 </p>
             </div>
                 <div class="ft-image">
-                    <img src="images/portal-2.png" />
+                    <div class="laptop-image">
+                        <div class="screen"><img src="images/feedback-4.gif" /></div><img class="laptop" src="images/laptop.png" />
+                    </div>
                     <div class="caption">
-                        Tickets were moved into two columns for faster scanning. Negative tickets and positive tickets with testimonials were given more weight so user can focus on resolving highest priority tasks. Issues: side by side tickets required too much cognitive load from users.
+                        A "Summary" tab provides the admin high level information such as how many open tickets there are in each category and how their club is performing compared to the chain average and over time. A separate "Tickets" tab displays highest priority tickets first. 
                     </div>
                 </div>
-
                 <div class="ft-image">
-                    <img src="images/portal-3.png" />
+                    <div class="laptop-image">
+                        <div class="screen"><img src="images/feedback-5.gif" /></div><img class="laptop" src="images/laptop.png" />
+                    </div>
                     <div class="caption">
-                        Details can be surfaced one ticket at a time, providing more focus when necessary but allowing the user to quickly scroll through the high level.
+                        Negative tickets are sorted by category first, then chronologically within. High priority tickets (those with comments) are given priority while those without are collapsed. 
                     </div>
                 </div>
-
             <div class="body-copy">
                 <strong class="green large" id="p-title">Task 3: Automation</strong>
                 <p>
@@ -188,45 +180,32 @@
                 </p>
             </div>
                 <div class="ft-image">
-                    <img src="images/portal-2.png" />
-                    <div class="caption">
-                        Tickets were moved into two columns for faster scanning. Negative tickets and positive tickets with testimonials were given more weight so user can focus on resolving highest priority tasks. Issues: side by side tickets required too much cognitive load from users.
+                    <div class="laptop-image">
+                        <div class="screen"><img src="images/feedback-6.gif" /></div><img class="laptop" src="images/laptop.png" />
                     </div>
-                </div>
-
-                <div class="ft-image">
-                    <img src="images/portal-3.png" />
-                    <div class="caption">
-                        Details can be surfaced one ticket at a time, providing more focus when necessary but allowing the user to quickly scroll through the high level.
+                    <div class="caption">The web widget will work with as much or as little effort the admin wants to put in. If they choose the auto post option all they have to do is set the refresh frequency and up to date testimonials will appear on their website.
                     </div>
                 </div>
         </section>
-
-
         <section class="intro" id="final-design" data-link-id="nav-item-3-red">
-            <div class="body-copy">
             <h2 class="red shadow">Final Design</h2>
-
-
-                <strong class="green large" id="p-title">Lorem ipsum dolor sit amet</strong>
+            <div class="body-copy">
+                <strong class="green large" id="p-title">A Focus on Prioritization</strong>
                 <p>
                     I began by keeping the existing card design but updating them to accommodate the new, more detailed Class feedback. Hierarchy was brought into the ticket sorting, surfacing the negative tickets at the top so the Club Manager can quickly put out any fires.
                 </p>
             </div>
                 <div class="ft-image">
-                    <img src="images/portal-2.png" />
+                    <div class="laptop-image">
+                        <div class="screen"><img src="images/feedback-final.gif" /></div><img class="laptop" src="images/laptop.png" />
+                    </div>
                     <div class="caption">
-                        Admin can quickly view feedback from all or individual club locations. The tickets use the same card design but are full width to provide faster scanning for the user and faster implementation for engineering. Tickets are sorted chronologically with comments surfaced and 'empty' ratings collapsed with an option to "Resolve All" empty positive tickets with a group email campaign. Admin can easily filter a day's tickets by category, especially important for admin who are only interested in one realm of the gym (ex: instructors). 
+                        Club Admin responded extremely well to the portal updates in protoype testing. One customer from the 1.0 launch who had cancelled their subscription even resigned their contract for Feedback 2.0.
                     </div>
                 </div>
-        </section>
 
-
-
-            </div>
-
-        </section>
-
+        </div>
+    </section>
 
 
 

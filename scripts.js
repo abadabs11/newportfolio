@@ -94,7 +94,7 @@ $("#nav-item-1").click(function () {
 $("#nav-item-1-red").click(function () {
     $('html, body').animate({
       scrollTop: $("#intro").offset().top - 140
-    }, 2000);
+    }, 2100);
   });
   $("#nav-item-2-red").click(function () {
     $('html, body').animate({
@@ -103,7 +103,7 @@ $("#nav-item-1-red").click(function () {
   });
   $("#nav-item-3-red").click(function () {
     $('html, body').animate({
-      scrollTop: $("#final-design").offset().top - 150
+      scrollTop: $("#final-design").offset().top - 130
     }, 2000);
   });
   // $("#nav-item-1-red").click(function () {
