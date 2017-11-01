@@ -460,7 +460,7 @@ section.other-projects {
 .thumbnails {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 2.5rem;
     position: relative;
     height: 19rem;
@@ -491,6 +491,7 @@ section.other-projects {
     text-align: center;
     background-blend-mode: multiply;
     border-radius: 0.1rem;
+    border: solid 4px;
 }
 
 .project-thumbnail#scout, .project-thumbnail#sametz, .project-thumbnail#ui-library, .project-thumbnail#netpulse-website{
@@ -761,9 +762,10 @@ img.laptop{width: 100%;}
     .bio-content{margin-top: 9.5rem;}
 }
 @media (max-width: 37.5rem){
-    .bio .feature-image{height: 11.75rem; width: 11.75rem; min-height: 11.75rem; min-width: 11.75rem; margin-left: -.5rem;}
+    .bio .feature-image{height: 11.75rem; width: 11.75rem; min-height: 11.75rem; min-width: 11.75rem; margin-left: 0}
     .bio{height: inherit; padding:0 1rem 5.5rem 1rem;}
-    .bio-content{flex-direction: column; justify-content: center; margin-top: 8.25rem;}
+    section.bio{min-height: 45rem;}
+    .bio-content{flex-direction: column; justify-content: center; margin-top: 6.25rem;}
     .bio-content .content{margin-top: 2rem;}
     .button-static{margin: 2rem 0;}
     h1{font-size: 3.25rem !important;}
@@ -779,24 +781,36 @@ img.laptop{width: 100%;}
     .adminportal .content {text-align: center !important;}
     .home-feature{width: 90%;}
     .other-projects-content{margin-top: 5rem; padding: 0 1rem;}
-    .thumbnails {height: 13rem;}
+    .thumbnails {height: 32rem;}
     .gradient{z-index: 5;}
-    .project-thumbnail{height: 8.5rem; width: 9.125rem; margin-bottom: 1.1875rem; font-size: 1rem;}
+    .project-thumbnail{height: 9.5rem; width: 100%; margin-bottom: 1.1875rem; font-size: 1rem;}
     .project-thumbnail#sametz{background-image: none;}
     .other-projects div.button{z-index: 10; margin-top: -1.25rem;}
-    section.contact{height: 22rem; background-position-x: right;}
+    section.contact{height: 22rem; background-position-x: 35rem; padding: 0 2rem;}
     .contact .content{margin-top: 3rem; min-width: inherit;}
     .side-image{display: none;}
     .hidden-image {display: flex; align-items: center; flex-direction: column; margin-bottom: 1.5rem;}
-    .hidden-image img#logos, img#phone{margin-top: 0;}
+    .hidden-image img#logos, img#phone{margin-top: 2rem;}
     .two-images .ft-image{width: 90%;}
     .side-image.large{display: block;}
     img#large-phone{margin-left: 0;}
-    .adminportal img{max-width: 24rem;}
+    .adminportal img{max-width: 21rem;}
     ul.case-nav-content{justify-content: center !important; flex-wrap: wrap !important;}
+    .case-nav{padding-left: 0 !important;}
+    li.last{margin-right: 0 !important;}
     .two-images{display: flex; flex-direction: column; align-items: center;}
     .large .phone-screen{margin-left: -10.35rem !important; margin-top: 4.5rem !important;}
     .caption{width: 100%;}
+    .laptop-image{display: flex; justify-content: center; align-items: center; position: relative;}
+    .screen{margin-top: -.35rem; display: inherit; max-height: 10.25rem; padding-left: 0; margin-left: -.025rem;}
+    .screen img{margin-left: -.5rem; width: 121%;}
+    img.laptop{width: 100%; min-height: inherit;}
+    .laptop-image img {min-height: inherit;}
+    .dashboard .content {margin-left: 0; width: inherit; text-align: center;}
+    img.next-case{width: 100%;}
+    .featured-projects .content{min-width: inherit; text-align: center;}
+    .bio-content svg{transform: rotate(90deg);}
+    .inline-link::before{width: 50%;}
 }
 @media (max-width: 54.25rem) and (min-width:37.5rem){
     .bio{height: inherit; padding:0 1rem 5.5rem 1rem;}
@@ -810,6 +824,7 @@ img.laptop{width: 100%;}
     section.contact{height: 22rem; background-position-x: right;}
     .contact .content{margin-top: 3rem; min-width: inherit;}
     h2{font-size: 3.25rem;}
+    .bio-content svg{transform: rotate(90deg);}
 }
 @media screen and (max-width: 59.75rem) {
     .case-header{padding: 0;}
@@ -820,7 +835,7 @@ img.laptop{width: 100%;}
     .case-nav{font-size: 1.15rem; width: 100%; padding-left: 2rem;}
     ul.case-nav-content{width: 100%; justify-content: flex-start; min-width: inherit;}
     .case-study-content{width: 100%; padding: 0 2rem 4.5rem 2rem;}    
-    .intro{flex-direction: row; margin-top: 4.625rem; width: 100%;}
+    .intro{flex-direction: column; margin-top: 4.625rem; width: 100%;}
     .side-image{max-width: inherit; position: inherit; margin-left: 0;}
     section#research{flex-direction: column;}
     section#design{flex-direction: column;}
