@@ -340,6 +340,11 @@ section.bio {
 .bio-content .content{
     margin-top: 4rem;
 }
+.bio-content svg{
+    margin-bottom: -5px;
+    margin-right: 5px;
+    animation: rotate .75s ease-in-out 1.5s backwards;
+}
 .bio .feature-image{
 	background-image: url("images/headshot.jpg");
     border: 0.9375rem solid #FFFFFF;
