@@ -802,7 +802,7 @@ img.laptop{width: 100%;}
     .large .phone-screen{margin-left: -10.35rem !important; margin-top: 4.5rem !important;}
     .caption{width: 100%;}
     .laptop-image{display: flex; justify-content: center; align-items: center; position: relative;}
-    .screen{margin-top: -.35rem; display: inherit; max-height: 10.25rem; padding-left: 0; margin-left: -.025rem;}
+    .screen{margin-top: .7rem; display: inherit; max-height: 9.5rem; padding-left: 0; margin-left: 2.25rem;}
     .screen img{margin-left: -.5rem; width: 121%;}
     img.laptop{width: 100%; min-height: inherit;}
     .laptop-image img {min-height: inherit;}
